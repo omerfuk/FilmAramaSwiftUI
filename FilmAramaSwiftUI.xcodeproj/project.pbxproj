@@ -13,6 +13,7 @@
 		DEA851C8288C839100F9ED24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA851C7288C839100F9ED24 /* Preview Assets.xcassets */; };
 		DEA851D3288C83E200F9ED24 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA851D2288C83E200F9ED24 /* Film.swift */; };
 		DEA851D6288C855400F9ED24 /* DownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA851D5288C855400F9ED24 /* DownloaderClient.swift */; };
+		DEA851D8288C89DB00F9ED24 /* FilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA851D7288C89DB00F9ED24 /* FilmViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		DEA851C7288C839100F9ED24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEA851D2288C83E200F9ED24 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		DEA851D5288C855400F9ED24 /* DownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderClient.swift; sourceTree = "<group>"; };
+		DEA851D7288C89DB00F9ED24 /* FilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		DEA851CF288C83C300F9ED24 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DEA851D7288C89DB00F9ED24 /* FilmViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				DEA851C3288C838E00F9ED24 /* ContentView.swift in Sources */,
 				DEA851D3288C83E200F9ED24 /* Film.swift in Sources */,
+				DEA851D8288C89DB00F9ED24 /* FilmViewModel.swift in Sources */,
 				DEA851C1288C838E00F9ED24 /* FilmAramaSwiftUIApp.swift in Sources */,
 				DEA851D6288C855400F9ED24 /* DownloaderClient.swift in Sources */,
 			);
