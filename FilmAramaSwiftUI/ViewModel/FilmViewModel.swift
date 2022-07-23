@@ -10,7 +10,7 @@ import SwiftUI
 
 class FilmListeViewModel: ObservableObject {
     
-    @Published var filmler = [Film]()
+    @Published var filmler = [FilmViewModel]()
     
     let downloaderClient = DownloaderClient()
     
@@ -24,10 +24,31 @@ class FilmListeViewModel: ObservableObject {
                 if let filmDizisi = filmDizisi {
                     
                     DispatchQueue.main.async {
-                        self.filmler = filmDizisi
+                        self.filmler = filmDizisi.map(FilmViewModel.init)
                     }
                 }
             }
         }
+    }
+}
+
+struct FilmViewModel {
+    
+    let film: Film
+    
+    var title: String{
+        film.title
+    }
+    
+    var poster: String {
+        film.poster
+    }
+    
+    var year: String {
+        film.year
+    }
+    
+    var imdbId: String {
+        film.imdbId
     }
 }
