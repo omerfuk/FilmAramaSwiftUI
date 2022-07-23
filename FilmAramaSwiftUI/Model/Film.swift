@@ -8,8 +8,8 @@
 import SwiftUI
 
 
-struct GelenFilm : Codable {
-        
+struct GelenFilm : Codable{
+    
     let filmler: [Film]
     
     private enum CodingKeys: String, CodingKey {
@@ -18,7 +18,7 @@ struct GelenFilm : Codable {
     
 }
 
-struct Film : Codable {
+struct Film : Codable{
     
     let title: String
     let year: String

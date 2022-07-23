@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DEA851C1288C838E00F9ED24 /* FilmAramaSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA851C0288C838E00F9ED24 /* FilmAramaSwiftUIApp.swift */; };
-		DEA851C3288C838E00F9ED24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA851C2288C838E00F9ED24 /* ContentView.swift */; };
+		DEA851C3288C838E00F9ED24 /* FilmListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA851C2288C838E00F9ED24 /* FilmListeView.swift */; };
 		DEA851C5288C839100F9ED24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA851C4288C839100F9ED24 /* Assets.xcassets */; };
 		DEA851C8288C839100F9ED24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA851C7288C839100F9ED24 /* Preview Assets.xcassets */; };
 		DEA851D3288C83E200F9ED24 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA851D2288C83E200F9ED24 /* Film.swift */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		DEA851BD288C838E00F9ED24 /* FilmAramaSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmAramaSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA851C0288C838E00F9ED24 /* FilmAramaSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmAramaSwiftUIApp.swift; sourceTree = "<group>"; };
-		DEA851C2288C838E00F9ED24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DEA851C2288C838E00F9ED24 /* FilmListeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListeView.swift; sourceTree = "<group>"; };
 		DEA851C4288C839100F9ED24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA851C7288C839100F9ED24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEA851D2288C83E200F9ED24 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		DEA851D0288C83C800F9ED24 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DEA851C2288C838E00F9ED24 /* ContentView.swift */,
+				DEA851C2288C838E00F9ED24 /* FilmListeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA851C3288C838E00F9ED24 /* ContentView.swift in Sources */,
+				DEA851C3288C838E00F9ED24 /* FilmListeView.swift in Sources */,
 				DEA851D3288C83E200F9ED24 /* Film.swift in Sources */,
 				DEA851D8288C89DB00F9ED24 /* FilmViewModel.swift in Sources */,
 				DEA851C1288C838E00F9ED24 /* FilmAramaSwiftUIApp.swift in Sources */,

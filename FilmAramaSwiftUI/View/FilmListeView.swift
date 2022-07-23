@@ -7,15 +7,20 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FilmListeView: View {
+    
+    
+    
     var body: some View {
-        Text("test")
-
+        
+        Text("fdaokfsa")
+        
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FilmListeView()
     }
 }

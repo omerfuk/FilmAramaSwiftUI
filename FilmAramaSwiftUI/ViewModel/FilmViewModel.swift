@@ -32,7 +32,8 @@ class FilmListeViewModel: ObservableObject {
     }
 }
 
-struct FilmViewModel {
+struct FilmViewModel{
+    
     
     let film: Film
     
