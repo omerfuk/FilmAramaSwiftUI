@@ -13,6 +13,16 @@ class DownloaderClient {
         
         guard let url = URL(string: "https://www.omdbapi.com/?s=titanic&apikey=e88eb61d") else{return completion(.failure(.yanlisURL))}
         
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, error == nil else{return completion(.failure(.veriGelmedi))}
+            
+            guard let filmCevabi = try? JSONDecoder().decode(GelenFilm.self, from: data) else {return completion(.failure(.veriIslenemedi))}
+            
+            completion(.success(filmCevabi.filmler))
+            
+        }
+        .resume()
+        
     }
     
 }
