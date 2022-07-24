@@ -11,6 +11,8 @@ struct FilmListeView: View {
     
     @ObservedObject var filmListeViewModel : FilmListeViewModel
     
+    @State var aranacakFilm = ""
+    
     init() {
         self.filmListeViewModel = FilmListeViewModel()
         self.filmListeViewModel.filmAramasiYap(filmIsmi: "pulp")
@@ -19,6 +21,24 @@ struct FilmListeView: View {
     var body: some View {
         
         NavigationView{
+            
+            
+            VStack{
+                
+                VStack{
+                    TextField.init("Aranacak Filmi Giriniz", text: $aranacakFilm) {
+                        
+                        self.filmListeViewModel.filmAramasiYap(filmIsmi: aranacakFilm)
+                    }
+                    .padding()
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .cornerRadius(15)
+                }
+                .padding(.horizontal, 20)
+                
+                
+                
+            
             List(filmListeViewModel.filmler, id: \.imdbId) { film in
                 
                 HStack{
@@ -38,6 +58,7 @@ struct FilmListeView: View {
                 
             }
             .navigationTitle("Film Kitabı")
+            }
         }
         
     }
@@ -47,5 +68,6 @@ struct FilmListeView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
        FilmListeView()
+            
     }
 }
