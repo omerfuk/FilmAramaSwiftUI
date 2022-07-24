@@ -18,27 +18,26 @@ struct FilmListeView: View {
     
     var body: some View {
         
-        List(filmListeViewModel.filmler, id: \.imdbId) { film in
-            
-            HStack{
-                Image(systemName: "video")
-                    .resizable()
-                    .frame(width: 50, height: 30)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 100, height: 150)
-                    .background(.gray)
-                    .cornerRadius(15)
+        NavigationView{
+            List(filmListeViewModel.filmler, id: \.imdbId) { film in
                 
-                VStack(alignment: .leading, spacing: 10){
-                    Text(film.title)
-                        .font(.title3)
-                        .foregroundColor(.blue)
-                    Text(film.year)
-                        .foregroundColor(.orange)
-                        .bold()
+                HStack{
+                    OzelImage(url: film.poster)
+                        .frame(width: 100, height: 150)
+                        .cornerRadius(15)
+                    
+                    VStack(alignment: .leading, spacing: 10){
+                        Text(film.title)
+                            .font(.title3)
+                            .foregroundColor(.blue)
+                        Text(film.year)
+                            .foregroundColor(.orange)
+                            .bold()
+                    }
                 }
+                
             }
-            
+            .navigationTitle("Film Kitabı")
         }
         
     }
