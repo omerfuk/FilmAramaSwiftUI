@@ -11,7 +11,7 @@ class DownloaderClient {
     
     func filmleriIndir(search: String, completion: @escaping (Result<[Film]?, DownloaderError>) -> Void) {
         
-        guard let url = URL(string: "https://www.omdbapi.com/?s=titanic&apikey=e88eb61d") else{return completion(.failure(.yanlisURL))}
+        guard let url = URL(string: "https://www.omdbapi.com/?s=\(search)&apikey=e88eb61d") else{return completion(.failure(.yanlisURL))}
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else{return completion(.failure(.veriGelmedi))}

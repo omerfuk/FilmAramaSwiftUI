@@ -61,6 +61,7 @@
 				DEA851D0288C83C800F9ED24 /* View */,
 				DEA851CF288C83C300F9ED24 /* ViewModel */,
 				DEA851CE288C83B400F9ED24 /* Model */,
+				DEA851D4288C851700F9ED24 /* Service */,
 				DEA851C4288C839100F9ED24 /* Assets.xcassets */,
 				DEA851C6288C839100F9ED24 /* Preview Content */,
 			);
@@ -79,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				DEA851D2288C83E200F9ED24 /* Film.swift */,
-				DEA851D4288C851700F9ED24 /* Service */,
 			);
 			path = Model;
 			sourceTree = "<group>";
