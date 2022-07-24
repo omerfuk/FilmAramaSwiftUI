@@ -28,7 +28,7 @@ struct FilmListeView: View {
                 VStack{
                     TextField.init("Aranacak Filmi Giriniz", text: $aranacakFilm) {
                         
-                        self.filmListeViewModel.filmAramasiYap(filmIsmi: aranacakFilm)
+                        self.filmListeViewModel.filmAramasiYap(filmIsmi: aranacakFilm.trimmingCharacters(in: .whitespacesAndNewlines).addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? aranacakFilm)
                     }
                     .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
