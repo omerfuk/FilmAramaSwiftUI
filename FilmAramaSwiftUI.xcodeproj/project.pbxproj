@@ -10,6 +10,8 @@
 		DE2467D3288D277B00F99CDA /* ImageDownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2467D2288D277B00F99CDA /* ImageDownloaderClient.swift */; };
 		DE2467D5288D283700F99CDA /* OzelImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2467D4288D283700F99CDA /* OzelImage.swift */; };
 		DE2FBA2C288D684B004E74FB /* FilmDetay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2FBA2B288D684B004E74FB /* FilmDetay.swift */; };
+		DE2FBA2E288D6AB0004E74FB /* FilmDetayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2FBA2D288D6AB0004E74FB /* FilmDetayViewModel.swift */; };
+		DE2FBA30288D6BE9004E74FB /* DetayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2FBA2F288D6BE9004E74FB /* DetayView.swift */; };
 		DEA851C1288C838E00F9ED24 /* FilmAramaSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA851C0288C838E00F9ED24 /* FilmAramaSwiftUIApp.swift */; };
 		DEA851C3288C838E00F9ED24 /* FilmListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA851C2288C838E00F9ED24 /* FilmListeView.swift */; };
 		DEA851C5288C839100F9ED24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA851C4288C839100F9ED24 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		DE2467D2288D277B00F99CDA /* ImageDownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderClient.swift; sourceTree = "<group>"; };
 		DE2467D4288D283700F99CDA /* OzelImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzelImage.swift; sourceTree = "<group>"; };
 		DE2FBA2B288D684B004E74FB /* FilmDetay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetay.swift; sourceTree = "<group>"; };
+		DE2FBA2D288D6AB0004E74FB /* FilmDetayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetayViewModel.swift; sourceTree = "<group>"; };
+		DE2FBA2F288D6BE9004E74FB /* DetayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayView.swift; sourceTree = "<group>"; };
 		DEA851BD288C838E00F9ED24 /* FilmAramaSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmAramaSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA851C0288C838E00F9ED24 /* FilmAramaSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmAramaSwiftUIApp.swift; sourceTree = "<group>"; };
 		DEA851C2288C838E00F9ED24 /* FilmListeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListeView.swift; sourceTree = "<group>"; };
@@ -63,11 +67,11 @@
 		DEA851BF288C838E00F9ED24 /* FilmAramaSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DEA851D4288C851700F9ED24 /* Service */,
 				DEA851D1288C83CE00F9ED24 /* App */,
 				DEA851D0288C83C800F9ED24 /* View */,
 				DEA851CF288C83C300F9ED24 /* ViewModel */,
 				DEA851CE288C83B400F9ED24 /* Model */,
-				DEA851D4288C851700F9ED24 /* Service */,
 				DEA851C4288C839100F9ED24 /* Assets.xcassets */,
 				DEA851C6288C839100F9ED24 /* Preview Content */,
 			);
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DEA851D7288C89DB00F9ED24 /* FilmViewModel.swift */,
+				DE2FBA2D288D6AB0004E74FB /* FilmDetayViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			children = (
 				DEA851C2288C838E00F9ED24 /* FilmListeView.swift */,
 				DE2467D4288D283700F99CDA /* OzelImage.swift */,
+				DE2FBA2F288D6BE9004E74FB /* DetayView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2FBA30288D6BE9004E74FB /* DetayView.swift in Sources */,
 				DEA851C3288C838E00F9ED24 /* FilmListeView.swift in Sources */,
 				DE2FBA2C288D684B004E74FB /* FilmDetay.swift in Sources */,
 				DEA851D3288C83E200F9ED24 /* Film.swift in Sources */,
@@ -202,6 +209,7 @@
 				DEA851D8288C89DB00F9ED24 /* FilmViewModel.swift in Sources */,
 				DEA851C1288C838E00F9ED24 /* FilmAramaSwiftUIApp.swift in Sources */,
 				DEA851D6288C855400F9ED24 /* DownloaderClient.swift in Sources */,
+				DE2FBA2E288D6AB0004E74FB /* FilmDetayViewModel.swift in Sources */,
 				DE2467D3288D277B00F99CDA /* ImageDownloaderClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
